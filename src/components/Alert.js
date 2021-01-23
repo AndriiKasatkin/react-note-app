@@ -12,7 +12,7 @@ export const Alert = () => {
         enter: 500,
         exit: 350,
       }}
-      className={'alert'}
+      className={`alert alert-${alert.type || 'warning'} alert-dismissible`}
       mountOnEnter
       unmountOnExit
     >
